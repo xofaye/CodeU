@@ -15,11 +15,12 @@ public class Collatz {
     static int loopCount(int x) {
         //STUDENTS: FILL IN CODE HERE!
         int count = 1; 
-        while(x != 1){
-            if(x % 2 == 0){
-                x = x/2;
+        int a = x;
+        while(a != 1){
+            if(a % 2 == 0){
+                a = a/2;
             }else{
-                x = 3 * x + 1;
+                a = 3 * a + 1;
             }
             count++;
         }
